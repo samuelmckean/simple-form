@@ -7,6 +7,6 @@ div {
   margin: 1rem;
 }
 
-input:invalid {
-  border-color: red;
+input.invalid {
+  background-color: rgb(247, 155, 155);
 }
