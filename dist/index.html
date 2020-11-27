@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en-US'>
   <head>
-    <meta name="viewport" content="width=device=width, intial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Form Project</title>
     <link rel="stylesheet" href="style.css">
@@ -18,15 +18,18 @@
       </div>
       <div>
         <label for="zipcode">Zip Code: </label>
-        <input type="text" name="zipcode" id="zipcode" required>
+        <input type="text" name="zipcode" id="zipcode" minlength="5" maxlength="10" 
+        pattern="\d{5}(-\d{4})?" required>
       </div>
       <div>
         <label for="password">Password: </label>
-        <input type="password" name="password" id="password" required>
+        <input type="password" name="password" id="password" 
+        minlength="8" maxlength="20" required>
       </div>
       <div>
         <label for="passwordconfirm">Confirm: </label>
-        <input type="password" name="passwordconfirm" id="password-confirm" required>
+        <input type="password" name="passwordconfirm" id="password-confirm" 
+        minlength="8" maxlength="20" required>
       </div>
       <div>
         <input type="submit" value="Submit">
